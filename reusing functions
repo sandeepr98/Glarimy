@@ -1,0 +1,24 @@
+import sys
+
+def deduplicate(s):
+l=[]
+l1=s.split()
+for word in l1:
+if word not in l:
+l.append(word)
+return l
+
+def sort(l1):
+sorted_list = sorted(l1)
+return sorted_list
+
+def parse(string):
+file = open(string, "r")
+content = file.read()
+file.close()
+l = deduplicate(content)
+sorted_word_list = sort(l)
+sorted_word = " ".join(sorted_word_list)
+print(sorted_words)
+
+parse(sys.argv[1])
