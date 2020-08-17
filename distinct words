@@ -1,0 +1,8 @@
+def deduplicate(s):
+s=s.split()
+s1=[]
+for i in s:
+if i not in s1:
+s1.append(i)
+print(s1)
+deduplicate("he is not is hero ")
