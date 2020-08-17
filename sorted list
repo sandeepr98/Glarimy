@@ -1,0 +1,5 @@
+def sort(food)
+food.sort()
+print(food)
+food=["ball","ice","apple"]
+sort(food)
